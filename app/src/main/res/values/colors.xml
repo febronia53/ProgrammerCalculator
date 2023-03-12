@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#E2E5E9</color>
+    <color name="input">#E2E5E9</color>
+    <color name="enabled_btn">#FFD3CB</color>
+    <color name="border">#A04121</color>
+    <color name="dark_text">#121324</color>
+    <color name="disabled_btn">#FBEAE7</color>
+    <color name="white">#fafafa</color>
+    <color name="light_text">#61121212</color>
+</resources>
