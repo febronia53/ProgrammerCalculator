@@ -13,4 +13,80 @@
         <item name="android:statusBarColor">?attr/background</item>
         <!-- Customize your theme here. -->
     </style>
+
+
+    <style name="CalculatorButton">
+        <item name="fontFamily">@font/dm_sans</item>
+        <item name="android:textColor">@color/dark_text</item>
+        <item name="background">@drawable/circle_btn</item>
+    </style>
+
+    <style name="CalculatorButton.Disabled">
+       <item name="background">@drawable/circle_btn_disabled</item>
+    </style>
+
+    <style name="CalculatorButton.Result">
+        <item name="background">@drawable/rounded_btn</item>
+    </style>
+
+
+
+
+    <style name="buttun">
+        <item name="backgroundTint">@color/enabled_btn</item>
+        <item name="android:textColor">@color/dark_text</item>
+        <item name="android:textSize">@dimen/text20</item>
+        <item name="fontFamily">@font/dm_sans</item>
+        <item name="background">@drawable/circle_btn</item>
+        <item name="android:background">@drawable/circle_btn</item>
+    </style>
+
+    <style name="buttun_alpha">
+        <item name="backgroundTint">@color/disabled_btn</item>
+        <item name="android:textColor">@color/dark_text</item>
+        <item name="android:textSize">@dimen/text20</item>
+        <item name="fontFamily">@font/dm_sans</item>
+        <item name="android:background">@drawable/circle_btn_disabled</item>
+    </style>
+
+    <style name="buttun_equal">
+        <item name="backgroundTint">@color/enabled_btn_dark</item>
+        <item name="android:textColor">@color/dark_text</item>
+        <item name="android:textSize">@dimen/text20</item>
+        <item name="fontFamily">@font/dm_sans</item>
+        <item name="android:background">@drawable/circle_btn_disabled</item>
+    </style>
+
+    <style name="NumberInEqual">
+        <item name="android:textSize">@dimen/text20</item>
+        <item name="android:textColor">@color/dark_text</item>
+        <item name="android:textAlignment">center</item>
+        <item name="fontFamily">@font/dm_sans</item>
+
+    </style>
+
+    <style name="NumberInResult">
+        <item name="android:textSize">@dimen/text20</item>
+        <item name="android:textColor">@color/dark_text</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="fontFamily">@font/dm_sans</item>
+
+    </style>
+
+
+    <style name="NumberInCalc">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">@color/dark_text</item>
+        <item name="android:textAlignment">textEnd</item>
+        <item name="fontFamily">@font/dm_sans</item>
+        <item name="background">@color/disabled_btn</item>
+    </style>
+
+    <style name="operation">
+        <item name="background">@drawable/circle_btn</item>
+        <item name="android:textColor">@color/dark_text</item>
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/dm_sans</item>
+
+    </style>
 </resources>

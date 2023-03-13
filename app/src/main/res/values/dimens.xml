@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small_raduis">8dp</dimen>
+    <dimen name="large_raduis">16dp</dimen>
+    <dimen name="rounded_raduis">24dp</dimen>
+
+
+    <dimen name="middle_margin">8dp</dimen>
+    <dimen name="large_margin">16dp</dimen>
+    <dimen name="extra_large_margin">24dp</dimen>
+
+
+
+
+    <dimen name="meduim_text">14sp</dimen>
+    <dimen name="large_text">16sp</dimen>
+    <dimen name="text20">20sp</dimen>
+    <dimen name="big_txt">24sp</dimen>
+</resources>

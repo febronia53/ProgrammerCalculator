@@ -2,7 +2,8 @@
 <resources>
     <color name="background">#E2E5E9</color>
     <color name="input">#E2E5E9</color>
-    <color name="enabled_btn">#FFD3CB</color>
+    <color name="enabled_btn">#FFAB9D</color>
+    <color name="enabled_btn_dark">#F88A77</color>
     <color name="border">#A04121</color>
     <color name="dark_text">#121324</color>
     <color name="disabled_btn">#FBEAE7</color>

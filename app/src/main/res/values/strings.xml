@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">ProgrammerCalculator</string>
+
+    <string-array name="types">
+        <item>Binary</item>
+        <item>Octal</item>
+        <item>Decimal</item>
+        <item>Hexadecimal</item>
+    </string-array>
 </resources>
