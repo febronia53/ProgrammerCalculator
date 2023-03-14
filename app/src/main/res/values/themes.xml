@@ -79,7 +79,7 @@
         <item name="android:textColor">@color/dark_text</item>
         <item name="android:textAlignment">textEnd</item>
         <item name="fontFamily">@font/dm_sans</item>
-        <item name="background">@color/disabled_btn</item>
+        <item name="background">@drawable/circle_btn_disabled</item>
     </style>
 
     <style name="operation">

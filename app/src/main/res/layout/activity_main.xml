@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
+    android:background="@color/white"
     android:padding="16dp"
     tools:context=".MainActivity">
 
@@ -71,12 +71,12 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/tv_calc"
+        android:id="@+id/txt_input"
         style="@style/NumberInCalc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/extra_large_margin"
-        tools:text="2000"
+        android:text="0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.656"
         app:layout_constraintStart_toStartOf="parent"
@@ -91,8 +91,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="hex: "
-        app:layout_constraintStart_toStartOf="@+id/tv_calc"
-        app:layout_constraintTop_toBottomOf="@+id/tv_calc"
+        app:layout_constraintStart_toStartOf="@+id/txt_input"
+        app:layout_constraintTop_toBottomOf="@+id/txt_input"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -127,45 +127,47 @@
         app:layout_constraintStart_toStartOf="@+id/tv_equalHex"
         app:layout_constraintTop_toBottomOf="@+id/tv_equalHex"
         tools:ignore="MissingConstraints" />
+
     <TextView
-        android:id="@+id/tv_ResultHex"
+        android:id="@+id/hex_res"
         style="@style/NumberInResult"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        tools:text="hex"
         app:layout_constraintBottom_toBottomOf="@+id/tv_equalHex"
-        app:layout_constraintStart_toEndOf="@+id/tv_equalHex"
-        app:layout_constraintTop_toTopOf="@+id/tv_equalHex" />
+        app:layout_constraintStart_toStartOf="@+id/oct_res"
+        app:layout_constraintTop_toTopOf="@+id/tv_equalHex"
+        tools:text="hex" />
 
     <TextView
-        android:id="@+id/tv_ResultOctal"
+        android:id="@+id/oct_res"
         style="@style/NumberInResult"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         tools:text="octal"
+        android:layout_marginStart="@dimen/large_margin"
         app:layout_constraintBottom_toBottomOf="@+id/tv_equalOctal"
         app:layout_constraintStart_toEndOf="@+id/tv_equalOctal"
         app:layout_constraintTop_toTopOf="@+id/tv_equalOctal" />
 
     <TextView
-        android:id="@+id/tv_ResultDec"
+        android:id="@+id/dec_res"
         style="@style/NumberInResult"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        tools:text="Decimal"
         app:layout_constraintBottom_toBottomOf="@+id/tv_equalDec"
-        app:layout_constraintStart_toEndOf="@+id/tv_equalDec"
-        app:layout_constraintTop_toTopOf="@+id/tv_equalDec" />
+        app:layout_constraintStart_toStartOf="@+id/oct_res"
+        app:layout_constraintTop_toTopOf="@+id/tv_equalDec"
+        tools:text="Decimal" />
 
     <TextView
-        android:id="@+id/tv_ResultBinary"
+        android:id="@+id/binary_res"
         style="@style/NumberInResult"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        tools:text="binary"
         app:layout_constraintBottom_toBottomOf="@+id/tv_equalBinary"
-        app:layout_constraintStart_toEndOf="@+id/tv_equalBinary"
-        app:layout_constraintTop_toTopOf="@+id/tv_equalBinary" />
+        app:layout_constraintStart_toStartOf="@+id/dec_res"
+        app:layout_constraintTop_toTopOf="@+id/tv_equalBinary"
+        tools:text="binary" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnA"
@@ -214,7 +216,7 @@
         android:layout_height="64dp"
         android:text="D"
         app:layout_constraintBottom_toBottomOf="@+id/btnA"
-        app:layout_constraintEnd_toEndOf="@+id/tv_calc"
+        app:layout_constraintEnd_toEndOf="@+id/txt_input"
         app:layout_constraintStart_toEndOf="@+id/btnC"
         app:layout_constraintTop_toTopOf="@+id/btnA"
         tools:ignore="MissingConstraints" />
@@ -361,7 +363,7 @@
 
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnNum0"
+        android:id="@+id/btnDel"
         style="@style/buttun_alpha"
         android:layout_width="64dp"
         android:layout_height="64dp"
@@ -373,16 +375,16 @@
         tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnDel"
+        android:id="@+id/btnNum0"
         style="@style/buttun"
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:text="0"
         android:textColor="@color/dark_text"
-        app:layout_constraintBottom_toBottomOf="@+id/btnNum0"
+        app:layout_constraintBottom_toBottomOf="@+id/btnDel"
         app:layout_constraintEnd_toEndOf="@+id/btnB"
         app:layout_constraintStart_toStartOf="@+id/btnB"
-        app:layout_constraintTop_toTopOf="@+id/btnNum0"
+        app:layout_constraintTop_toTopOf="@+id/btnDel"
         tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.AppCompatButton
